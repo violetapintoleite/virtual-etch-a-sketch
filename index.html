@@ -3,20 +3,41 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Virtual Etch a Sketch</title>
+    <title>Virtual Etch-a-Sketch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <div class="canvasWrap">
       <canvas width="1600" height="1000" id="etch-a-sketch"></canvas>
       <div class="buttons">
-        <button class="shake">Shake!</button>
+        <button class="shake">Clean!</button>
+        <footer>
+          This project was coded by
+          <a href="https://www.linkedin.com/in/violetapintoleite/"
+            >Violeta Pinto Leite</a
+          >
+          and it's Open-Sourced on
+          <a href="https://github.com/violetapintoleite/virtual-etch-a-sketch"
+            >GitHub</a
+          >
+        </footer>
       </div>
     </div>
     <style>
       body {
         background: #a8a8a8;
         min-height: 500px;
+        text-align: center;
+      }
+      footer {
+        font-family: "Franklin Gothic Medium", Arial, sans-serif;
+        font-size: 11px;
+        color: honeydew;
+        padding: 20px;
+        letter-spacing: 2px;
+      }
+      a {
+        color: honeydew;
       }
 
       canvas {
@@ -34,6 +55,7 @@
       button {
         border-radius: 50%;
         padding: 20px;
+        margin: 20px;
       }
 
       @keyframes shake {
