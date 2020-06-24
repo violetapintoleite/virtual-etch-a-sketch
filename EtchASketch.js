@@ -63,6 +63,7 @@ switch (key) {
 // handler for the keys
 function handleKey(e) {
     if (e.key.includes('Arrow')) {
+       e.preventDefault();
         draw({ key: e.key });
 
     }
